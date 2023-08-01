@@ -7,18 +7,18 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   const name = "abc";
   return (
-    <div>
-      {/* <HomePage />
-      <Booklist /> */}
-
+    <>
       <BrowserRouter>
+      <div style={(...GlobalStyles.navbar)}>
+      </div>
         <Routes>
-          <Route exact path="/" elememt={<HomePage username={name} />} />
-          <Route exact path="/books" elememt={<Booklist />} />
-          <Route exact path="*" elememt={<PageNotFound />} />
+          <Route exact path="/" element={<HomePage username={name} />} />
+          <Route exact path="/books" element={<Booklist />} />
+          <Route exact path="*" element={<PageNotFound />} />
         </Routes>
+        
       </BrowserRouter>
-    </div>
+    </>
   );
 }
 
