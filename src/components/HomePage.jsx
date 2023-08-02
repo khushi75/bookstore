@@ -1,7 +1,7 @@
 import React from "react";
 
-const HomePage = (props) => {
-  return <div>HomePage - name is {props.username} </div>;
+const HomePage = () => {
+  return <div>HomePage </div>;
 };
 
 export default HomePage;

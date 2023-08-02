@@ -1,4 +1,5 @@
 import React from "react";
+import { Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 
 const Booklist = () => {
@@ -10,7 +11,9 @@ const Booklist = () => {
   return (
     <>
       <div>Here is a Booklist.</div>
-      <button onClick={handleClick}> Go to Home</button>
+      <Button variant="contained" onClick={handleClick}>
+        Go to Home
+      </Button>
     </>
   );
 };
