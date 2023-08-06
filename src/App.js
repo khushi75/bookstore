@@ -6,9 +6,9 @@ import PageNotFound from "./components/PageNotFound";
 import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
 import { GlobalStyles } from "./styles/globalStyles";
 import { createTheme, ThemeProvider } from "@mui/material";
+import { ToastContainer } from "react-toastify";
 
 function App() {
-  const name = "abc";
   const theme = createTheme({
     components: {
       MuiButton: {
@@ -24,6 +24,7 @@ function App() {
     <>
       <ThemeProvider theme={theme}>
         <BrowserRouter>
+          <ToastContainer />
           <div style={{ ...GlobalStyles.navbar }}>
             <NavLink to="/">Home</NavLink>
             <NavLink to="/books">Booklist</NavLink>
